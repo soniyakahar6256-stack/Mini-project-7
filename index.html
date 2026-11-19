@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    
+ <div class="container">
+ 
+    <h1>Astrology Insights</h1><br>
+  <form id="astroForm"> 
+    <label for="name">First Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname" name="surname" required><br><br>
+
+    <label for="day">Date of birth (day): </label>
+    <input type="number" id="day" name="day" min="1" max="31" required><br><br>
+
+    <label for="month">Month:</label>
+    <input type="number" id="month" name="month" min="1" max="12" required><br><br>
+
+    <label for="year">Year:</label>
+    <input type="number" id="year" name="year" min="1900" max="2026" required><br><br>
+    <button type="submit">Get Insights</button>
+    
+  </form>
+ <div  id="result"></div>
+   
+
+
+
+
+
+
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="first.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+<script>
+particlesJS("particles-js", {
+    "particles": {
+        "number": {
+            "value": 60
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle"
+        },
+        "opacity": {
+            "value": 0.5
+        },
+        "size": {
+            "value": 3
+        },
+        "line_linked": {
+            "enable": true,
+            "distance": 150,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 3
+        }
+    },
+    "interactivity": {
+        "events": {
+            "onhover": {
+                "enable": true,
+                "mode": "grab"
+            }
+        }
+    },
+    "retina_detect": true
+});
+</script>
+</body>
+</html>
